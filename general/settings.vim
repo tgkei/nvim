@@ -1,7 +1,7 @@
 " set leader key
 "map <Space> <Leader>
 "nmap <space> <leader>
-let mapleader=" "
+let g:mapleader="\<Space>"
 nnoremap <Space> <Nop>
 set iskeyword+=-                      	" treat dash separated words as a word text object"
 
