@@ -40,7 +40,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Cool Icons
     Plug 'ryanoasis/vim-devicons'
     " Auto pairs for '(' '[' '{' 
-    Plug 'jiangmiao/auto-pairs'
+    " Plug 'jiangmiao/auto-pairs'
     " Themes
     Plug 'christianchiarulli/onedark.vim'
     " Plug 'kaicataldo/material.vim'
