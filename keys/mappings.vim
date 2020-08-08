@@ -22,6 +22,10 @@ else
   " inoremap <c-u> <ESC>viwUi
   " nnoremap <c-u> viwU<Esc>
 
+  " FZF short cut
+  map <C-f> <ESC><ESC>:FZF<CR>
+  map <C-r> <ESC><ESC>:Rg<CR>
+
   " TAB in general mode will move to text buffer
   nnoremap <TAB> :bnext<CR>
   " SHIFT-TAB will go back
