@@ -8,6 +8,10 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+  " add this line to your .vimrc file
+  Plug 'mattn/emmet-vim'
+  " Multi cursor
+  Plug 'terryma/vim-multiple-cursors'
   " Change dates fast
   Plug 'tpope/vim-speeddating'
   " Convert binary, hex, etc..

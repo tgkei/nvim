@@ -4,6 +4,9 @@
 " _/ // / / / / /__| |/ / / / / / / /
 "/___/_/ /_/_/\__(_)___/_/_/ /_/ /_/ 
 
+" emmet setting
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
 
 " Always source these
 source $HOME/.config/nvim/vim-plug/plugins.vim

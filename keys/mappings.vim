@@ -3,6 +3,10 @@
 vnoremap < <gv
 vnoremap > >gv
 
+" Emmet key setting
+let g:user_emmet_mode='n'
+let g:user_emmet_leader_key=';'
+
 if exists('g:vscode')
 
 " Simulate same TAB behavior in VSCode
@@ -21,10 +25,6 @@ else
   " Easy CAPS
   " inoremap <c-u> <ESC>viwUi
   " nnoremap <c-u> viwU<Esc>
-
-  " FZF short cut
-  map <C-f> <ESC><ESC>:FZF<CR>
-  map <C-r> <ESC><ESC>:Rg<CR>
 
   " TAB in general mode will move to text buffer
   nnoremap <TAB> :bnext<CR>
