@@ -78,10 +78,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/goyo.vim'
     " Making stuff
     Plug 'neomake/neomake'
-    " Snippets TODO fix TAB hijack
-    " Plug 'SirVer/ultisnips'
     " Better Comments
     Plug 'jbgutierrez/vim-better-comments'
+
+    "React
+    "Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
+    " Snippets TODO fix TAB hijack
+    " Plug 'SirVer/ultisnips'
+    "Plug 'mlaursen/vim-react-snippets'
   endif
 
 

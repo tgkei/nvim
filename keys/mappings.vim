@@ -4,7 +4,7 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Emmet key setting
-let g:user_emmet_mode='n'
+" let g:user_emmet_mode='n'
 let g:user_emmet_leader_key=';'
 
 if exists('g:vscode')
