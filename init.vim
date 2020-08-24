@@ -6,7 +6,12 @@
 
 " emmet setting
 let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
+let g:user_emmet_settings = {
+\  'javascript.jsx' : {
+\      'extends' : 'jsx',
+\  },
+\}
+autocmd FileType html,css,javascript.jsx EmmetInstall
 
 " Always source these
 source $HOME/.config/nvim/vim-plug/plugins.vim
