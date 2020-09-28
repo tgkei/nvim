@@ -47,6 +47,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'jiangmiao/auto-pairs'
     " Themes
     Plug 'christianchiarulli/onedark.vim'
+    " Solarized 8 
+    Plug 'lifepillar/vim-solarized8'
     " Plug 'kaicataldo/material.vim'
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -86,6 +88,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Snippets TODO fix TAB hijack
     " Plug 'SirVer/ultisnips'
     "Plug 'mlaursen/vim-react-snippets'
+
   endif
 
 
