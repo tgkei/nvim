@@ -49,6 +49,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'christianchiarulli/onedark.vim'
     " Solarized 8 
     Plug 'lifepillar/vim-solarized8'
+    " afterglow
+    Plug 'danilo-augusto/vim-afterglow'
+
     " Plug 'kaicataldo/material.vim'
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
