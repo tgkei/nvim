@@ -32,6 +32,7 @@ else
   " source $HOME/.config/nvim/themes/solarized8_low.vim
   source $HOME/.config/nvim/themes/afterglow.vim
   source $HOME/.config/nvim/themes/airline.vim
+  " source $HOME/.config/nvim/themes/gruvbox.vim
   " source $HOME/.config/nvim/themes/eleline.vim
   source $HOME/.config/nvim/plug-config/rnvimr.vim
   source $HOME/.config/nvim/plug-config/fzf.vim

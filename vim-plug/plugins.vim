@@ -47,6 +47,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'jiangmiao/auto-pairs'
     " Themes
     Plug 'christianchiarulli/onedark.vim'
+    Plug 'morhetz/gruvbox'
     " Solarized 8 
     Plug 'lifepillar/vim-solarized8'
     " afterglow
