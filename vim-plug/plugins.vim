@@ -46,11 +46,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Auto pairs for '(' '[' '{' 
     " Plug 'jiangmiao/auto-pairs'
     " Themes
-    Plug 'christianchiarulli/onedark.vim'
-    Plug 'morhetz/gruvbox'
-    " Solarized 8 
-    Plug 'lifepillar/vim-solarized8'
-    " afterglow
+    Plug 'joshdick/onedark.vim'
+    " Plug 'morhetz/gruvbox'
+    " Plug 'lifepillar/vim-solarized8'
     Plug 'danilo-augusto/vim-afterglow'
 
     " Plug 'kaicataldo/material.vim'
@@ -86,6 +84,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neomake/neomake'
     " Better Comments
     Plug 'jbgutierrez/vim-better-comments'
+    " Treesitter
+    " Plug 'nvim-treesitter/nvim-treesitter'
 
     "React
     "Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
