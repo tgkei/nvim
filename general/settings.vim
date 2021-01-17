@@ -2,6 +2,9 @@ nnoremap <Space> <Nop>
 let g:mapleader="\<Space>"
 set iskeyword+=-                        " treat dash separated words as a word text object"
 
+" ignore netrwhist
+let g:netrw_dirhistmax = 0
+
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
@@ -45,3 +48,5 @@ set nowritebackup                       " This is recommended by coc
 
 filetype plugin indent on		" enable file type detection 
 autocmd FileType py setlocal tabstop=4 shiftwidth=4 expandtab 
+
+
