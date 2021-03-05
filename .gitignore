@@ -8,3 +8,4 @@ autoload/plugged/*
 session
 general/paths.vim
 
+autoload/*

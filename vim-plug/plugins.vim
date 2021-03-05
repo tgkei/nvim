@@ -22,7 +22,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Plug 'voldikss/vim-floaterm'
   " Start Screen
   " Plug 'mhinz/vim-startify'
-  " Help
+  " Which key
   Plug 'liuchengxu/vim-which-key'
 
 call plug#end()

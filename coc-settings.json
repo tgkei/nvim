@@ -7,7 +7,17 @@
     "v": "open:vsplit"
   },
 
-  "python.formatting.provider": "black",
-  "coc.preferences.formatOnType": true,
-  "coc.preferences.formatOnSaveFiletypes": ["python"]
+  "coc.preferences.formatOnSaveFiletypes": [
+      "python",
+      "json",
+      "java",
+      "js",
+      "ts"
+  ],
+
+  "codeLens.enable": true,
+  "java.referencesCodeLens.enabled": true,
+  "java.implementationsCodeLens.enabled": true,
+  "java.completion.enabled": true,  "java.jdt.ls.vmargs": "-javaagent:/Users/user/.java/lombok-1.18.12.jar -Xbootclasspath/a:/Users/user/.java/lombok-1.18.12.jar"
+  
 }

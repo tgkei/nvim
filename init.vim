@@ -11,4 +11,4 @@ source $HOME/.config/nvim/vim-plug/which-key.vim
 colorscheme gruvbox
 let g:airline_theme='base16_gruvbox_dark_hard'
 
-set pyxversion=3
+"set pyxversion=3

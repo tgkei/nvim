@@ -17,7 +17,7 @@ set splitbelow                          " Horizontal splits will automatically b
 set splitright                          " Vertical splits will automatically be to the right
 set t_Co=256                            " Support 256 colors
 set conceallevel=0                      " So that I can see `` in markdown files
-set tabstop=2                           " Insert 2 spaces for a tab
+set tabstop=2                           " Insert 4 spaces for a tab
 set softtabstop=2
 set shiftwidth=2                        " Change the number of space characters inserted for indentation
 set expandtab                           " Converts tabs to spaces
@@ -37,7 +37,8 @@ set timeoutlen=100                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set incsearch
-set nohlsearch                          " Disable highlight while searching
+"set nohlsearch                          " Disable highlight while searching
+set textwidth=120
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -48,6 +49,6 @@ cmap w!! w !sudo tee %
 set nowritebackup                       " This is recommended by coc 
 
 filetype plugin indent on		" enable file type detection 
-autocmd FileType py setlocal tabstop=4 shiftwidth=4 expandtab 
+autocmd FileType py,java setlocal tabstop=4 shiftwidth=4 expandtab 
 
 
