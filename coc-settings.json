@@ -15,6 +15,8 @@
       "ts"
   ],
 
+  "python.analysis.typeCheckingMode": "off",
+
   "codeLens.enable": true,
   "java.referencesCodeLens.enabled": true,
   "java.implementationsCodeLens.enabled": true,
