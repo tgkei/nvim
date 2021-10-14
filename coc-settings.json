@@ -20,6 +20,10 @@
   "codeLens.enable": true,
   "java.referencesCodeLens.enabled": true,
   "java.implementationsCodeLens.enabled": true,
-  "java.completion.enabled": true,  "java.jdt.ls.vmargs": "-javaagent:/Users/user/.java/lombok-1.18.12.jar -Xbootclasspath/a:/Users/user/.java/lombok-1.18.12.jar"
+  "java.completion.enabled": true,
+  "java.home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/bin/java",
+  "java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok/lombok.jar -Xbootclasspath/a:/usr/local/share/lombok/lombok.jar",
+  "clangd.path": "/Users/user/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin/clangd",
   
+  "metal.javaHome":"/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/bin/java"
 }

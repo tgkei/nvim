@@ -52,3 +52,4 @@ filetype plugin indent on		" enable file type detection
 autocmd FileType py,java setlocal tabstop=4 shiftwidth=4 expandtab 
 
 
+autocmd BufRead,BufNewFile Jenkinsfile* set filetype=groovy

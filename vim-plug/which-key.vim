@@ -32,7 +32,8 @@ let g:which_key_map['h'] = [ '<C-W>s'                     , 'split below']
 let g:which_key_map['T'] = [ ':Rg'                        , 'search text' ]
 let g:which_key_map['v'] = [ '<C-W>v'                     , 'split right']
 let g:which_key_map['z'] = [ 'Goyo'                       , 'zen' ]
-let g:which_key_map['q'] = [ '<C-W>c'                         , 'close window']
+let g:which_key_map['q'] = [ ':bw'                         , 'close window']
+let g:which_key_map['w'] = [ '<C-W>c'                    , 'wipe window']
 
 " s is for search
 let g:which_key_map['S'] = {

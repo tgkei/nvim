@@ -4,6 +4,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'ryanoasis/vim-devicons'
   " Themes
   Plug 'morhetz/gruvbox'
+  " For scala
+  Plug 'joshdick/onedark.vim'
   " Intellisense
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   " FZF
