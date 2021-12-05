@@ -5,7 +5,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Themes
   Plug 'morhetz/gruvbox'
   " For scala
-  Plug 'joshdick/onedark.vim'
+  " Plug 'joshdick/onedark.vim'
   " Intellisense
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   " FZF
@@ -26,5 +26,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Plug 'mhinz/vim-startify'
   " Which key
   Plug 'liuchengxu/vim-which-key'
+  " floaterm
+  Plug 'voldikss/vim-floaterm'
 
 call plug#end()
