@@ -1,3 +1,5 @@
+vim.api.nvim_set_keymap("n", "<leader>e", ":NvimTreeToggle<cr>", {noremap = true, silent = true })
+
 return require("nvim-tree").setup({
   sort_by = "case_sensitive",
   view = {
@@ -5,6 +7,8 @@ return require("nvim-tree").setup({
     mappings = {
       list = {
         { key = "u", action = "dir_up" },
+        { key = "v", action = "vsplit" },
+        { key = "h", action = "split" },
       },
     },
   },
