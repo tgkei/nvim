@@ -9,3 +9,5 @@ session
 general/paths.vim
 
 autoload/*
+
+jdt/data
