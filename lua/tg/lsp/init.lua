@@ -4,4 +4,4 @@ if not status_ok then
 end
 
 require "tg.lsp.lsp-installer"
--- require "tg.lsp.handlers".setup()
+require "tg.lsp.handlers".setup()

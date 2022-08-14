@@ -55,19 +55,9 @@ return packer.startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
-  -- tabline
-  use {
-  'kdheepak/tabline.nvim',
-  config = function()
-    require'tabline'.setup {
-      enable = false,
-      options = {
-        show_filename_only = true,
-      }
-    }
-  end,
-    requires = {'hoob3rt/lualine.nvim', 'kyazdani42/nvim-web-devicons'}
-  }
+  -- bufferline
+  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+
 
 
   -- nvimtree
@@ -91,10 +81,17 @@ return packer.startup(function(use)
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
-  
+
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  use 'mfussenegger/nvim-jdtls' -- java
+
+  -- treesitter
+  use {
+        'nvim-treesitter/nvim-treesitter',
+        run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+    }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

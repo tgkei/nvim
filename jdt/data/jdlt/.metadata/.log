@@ -1,0 +1,363 @@
+!SESSION 2022-08-14 21:14:21.607 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.16
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_KR
+Command-line arguments:  -data /Users/kimtaegyun/.config/nvim/jdt/data/jdlt
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:22.660
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:22.850
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:22.879
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:22.882
+!MESSAGE Initializing Java Language Server 1.11.0.202205051421
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:22.907
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:22.908
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:22.913
+!MESSAGE Wait for AutoBuildOffJob start
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:22.926
+!MESSAGE Wait for AutoBuildOffJob end 11ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:22.926
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:22.927
+!MESSAGE Started org.eclipse.m2e.core 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:22.927
+!MESSAGE ProjectRegistryRefreshJob finished 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:22.928
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:22.946
+!MESSAGE Started org.eclipse.buildship.core 19ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:22.970
+!MESSAGE LoadingGradleVersionJob finished 24ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:22.987
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:22.991
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:23.134
+!MESSAGE Default VM Install changed from  null to net.java.openjdk.11.0.16.jdk-/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:23.140
+!MESSAGE defaultVMInstallChanged -> force update of jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:23.164
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:23.556
+!MESSAGE Importing Gradle project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:23.557
+!MESSAGE No previous Gradle project at /Users/kimtaegyun/dev/jdlt, it must be synchronized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:28.273
+!MESSAGE Workspace initialized in 5302ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:28.396
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:28.397
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:28.433
+!MESSAGE >> New configuration: {java={progressReports={enabled=true}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:28.434
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:28.437
+!MESSAGE >> New configuration: {java={progressReports={enabled=true}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:28.438
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:29.086
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:29.629
+!MESSAGE begin problem for /JdltApplication.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:29.630
+!MESSAGE 0 problems reported for /JdltApplication.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:29.634
+!MESSAGE Validated 1. Took 542 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:29.646
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:29.661
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:29.661
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:33.489
+!MESSAGE >> document/references
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:34.417
+!MESSAGE >> document/definition
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:34.440
+!MESSAGE >> java/classFileContents
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:34.443
+!MESSAGE ClassFile contents request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:34.450
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:43.202
+!MESSAGE >> document/definition
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:44.819
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:46.732
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:46.735
+!MESSAGE >> exit
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:46.862
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:46.870
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:
+!SESSION 2022-08-14 21:14:56.017 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.16
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_KR
+Command-line arguments:  -data /Users/kimtaegyun/.config/nvim/jdt/data/jdlt
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:57.249
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:57.476
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:57.511
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:57.514
+!MESSAGE Initializing Java Language Server 1.11.0.202205051421
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:57.552
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:57.552
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:57.558
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:57.559
+!MESSAGE Started org.eclipse.m2e.core 1ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:57.573
+!MESSAGE ProjectRegistryRefreshJob finished 14ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:57.574
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:57.686
+!MESSAGE Started org.eclipse.buildship.core 112ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:57.687
+!MESSAGE LoadingGradleVersionJob finished 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:57.706
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:58.103
+!MESSAGE Importing Gradle project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:58.122
+!MESSAGE Workspace initialized in 433ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:58.169
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:58.172
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:58.194
+!MESSAGE >> New configuration: {java={progressReports={enabled=true}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:58.195
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:58.196
+!MESSAGE >> New configuration: {java={progressReports={enabled=true}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:58.199
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:58.461
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:58.840
+!MESSAGE >> document/definition
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:58.889
+!MESSAGE >> java/classFileContents
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:58.894
+!MESSAGE ClassFile contents request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:58.899
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:58.952
+!MESSAGE begin problem for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:58.952
+!MESSAGE 1 problems reported for /test.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:58.983
+!MESSAGE Validated 1. Took 510 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:58.998
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:59.016
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:14:59.016
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:48.113
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:48.116
+!MESSAGE >> exit
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:48.251
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:48.268
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:
+!SESSION 2022-08-14 21:15:51.197 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.16
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_KR
+Command-line arguments:  -data /Users/kimtaegyun/.config/nvim/jdt/data/jdlt
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:52.506
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:52.698
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:52.730
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:52.733
+!MESSAGE Initializing Java Language Server 1.11.0.202205051421
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:52.758
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:52.758
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:52.764
+!MESSAGE Starting org.eclipse.m2e.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:52.765
+!MESSAGE Started org.eclipse.m2e.core 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:52.779
+!MESSAGE ProjectRegistryRefreshJob finished 14ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:52.779
+!MESSAGE Starting org.eclipse.buildship.core
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:52.882
+!MESSAGE Started org.eclipse.buildship.core 103ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:52.883
+!MESSAGE LoadingGradleVersionJob finished 1ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:52.904
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:53.314
+!MESSAGE Importing Gradle project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:53.335
+!MESSAGE Workspace initialized in 451ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:53.381
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:53.383
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:53.409
+!MESSAGE >> New configuration: {java={progressReports={enabled=true}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:53.410
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:53.413
+!MESSAGE >> New configuration: {java={progressReports={enabled=true}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:53.415
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:53.661
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:54.152
+!MESSAGE begin problem for /JdltApplication.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:54.153
+!MESSAGE 0 problems reported for /JdltApplication.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:54.156
+!MESSAGE Validated 1. Took 484 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:54.175
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:54.190
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:54.190
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:56.611
+!MESSAGE >> document/definition
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:56.684
+!MESSAGE >> java/classFileContents
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:56.698
+!MESSAGE ClassFile contents request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:56.709
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2022-08-14 21:15:57.353
+!MESSAGE >> document/didClose
