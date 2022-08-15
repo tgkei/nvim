@@ -7,6 +7,7 @@ require "tg.nvimtree"
 require "tg.cmp"
 require "tg.lsp"
 require "tg.treesitter"
+require "tg.tel"
 
 -- vim.cmd "colorscheme tokyonight"
 vim.cmd "colorscheme gruvbox"
