@@ -87,6 +87,9 @@ return packer.startup(function(use)
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use 'mfussenegger/nvim-jdtls' -- java
 
+  -- scala
+  use({'scalameta/nvim-metals', requires = { "nvim-lua/plenary.nvim" }})
+
   -- treesitter
   use {
         'nvim-treesitter/nvim-treesitter',

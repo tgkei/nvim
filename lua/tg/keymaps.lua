@@ -21,7 +21,7 @@ vim.g.maplocalleader = " "
 -- Normal --
 -- Create window
 keymap("n", "vs", "<C-w>v", opts)
-keymap("n", "hs", "<C-w>s", opts)
+--keymap("n", "hs", "<C-w>s", opts)
 
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
@@ -29,8 +29,8 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 -- Termination
-keymap("n", "<leader>q", ":bw<CR>", opts) -- kill buffer
-keymap("n", "<leader>w", "<C-w>q", opts) -- kill window
+keymap("n", "<leader>w", ":bw<CR>", opts) -- kill buffer
+keymap("n", "<leader>q", "<C-w>q", opts) -- kill window
 
 -- Navigate buffers
 keymap("n", "<Tab>", ":bnext<CR>", opts)
@@ -70,10 +70,10 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 -- telescope
 --keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
-keymap("n", "<leader>r", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
 
 -- terminal
-keymap("n", "<leader>t", ":sp<CR> :term<CR> :resize 20N<CR> i", opts)
+keymap("n", "<leader>t", ":sp<CR> :term<CR> :resize 8<CR> i", opts)
 -- keymap("t", "<Esc>", "<C-\\><C-n>", opts)
 --keymap("n", "<leader>qt", "bw!<CR>", opts)
-keymap("t", "<ESC>", "<C-\\><C-n> :<CR> :bw!<CR>", opts)
+keymap("t", "<ESC>", ":<CR> <C-\\><C-n> :<CR> :bw!<CR>", opts)

@@ -13,3 +13,5 @@ autoload/*
 jdt/data
 jdt/config_*/**
 !jdt/config_*/config.ini
+
+plugin
