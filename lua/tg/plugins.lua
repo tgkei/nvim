@@ -46,7 +46,7 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
   -- colorscheme
-  use "morhetz/gruvbox"
+  use "ellisonleao/gruvbox"
   use 'folke/tokyonight.nvim'
 
   -- lualine

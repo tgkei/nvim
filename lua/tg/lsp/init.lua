@@ -5,7 +5,7 @@ end
 
 require "tg.lsp.lsp-installer"
 require "tg.lsp.handlers".setup()
-require "tg.lsp.scala"
+-- require "tg.lsp.scala"
 
 -- scala needs to be configured by itself
 -- local util = require("lspconfig.util")

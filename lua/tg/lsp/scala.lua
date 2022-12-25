@@ -1,3 +1,4 @@
+"""
 -------------------------------------------------------------------------------
 -- These are example settings to use with nvim-metals and the nvim built-in
 -- LSP. Be sure to thoroughly read the `:help nvim-metals` docs to get an
@@ -107,3 +108,4 @@ vim.cmd [[hi! link LspReferenceRead CursorColumn]]
 vim.cmd [[hi! link LspReferenceWrite CursorColumn]]
 
 
+"""
