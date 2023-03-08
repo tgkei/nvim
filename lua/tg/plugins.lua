@@ -56,8 +56,7 @@ return packer.startup(function(use)
   }
 
   -- bufferline
-  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
-
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
 
   -- nvimtree
@@ -83,20 +82,27 @@ return packer.startup(function(use)
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
   -- LSP
-  use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  --use "neovim/nvim-lspconfig" -- enable LSP
+  --use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use 'mfussenegger/nvim-jdtls' -- java
-  use 'williamboman/mason.nvim'
+  use {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+  }
+
 
   -- scala
   use({'scalameta/nvim-metals', requires = { "nvim-lua/plenary.nvim" }})
+  -- kotlin
+  use({'udalov/kotlin-vim'})
 
   -- treesitter
   use {
-        'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate'
         -- 'nvim-treesitter/nvim-treesitter',
-        -- run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+        -- run = ':TSUpdate'
+        'nvim-treesitter/nvim-treesitter',
+        run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
     }
 
   -- telescope
@@ -105,7 +111,6 @@ return packer.startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use 'nvim-telescope/telescope-media-files.nvim'
-
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
