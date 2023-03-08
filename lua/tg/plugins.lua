@@ -46,7 +46,7 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
   -- colorscheme
-  use "ellisonleao/gruvbox"
+  use "ellisonleao/gruvbox.nvim"
   use 'folke/tokyonight.nvim'
 
   -- lualine
@@ -86,6 +86,7 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use 'mfussenegger/nvim-jdtls' -- java
+  use 'williamboman/mason.nvim'
 
   -- scala
   use({'scalameta/nvim-metals', requires = { "nvim-lua/plenary.nvim" }})
@@ -93,7 +94,9 @@ return packer.startup(function(use)
   -- treesitter
   use {
         'nvim-treesitter/nvim-treesitter',
-        run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+        run = ':TSUpdate'
+        -- 'nvim-treesitter/nvim-treesitter',
+        -- run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
     }
 
   -- telescope
