@@ -10,7 +10,8 @@ general/paths.vim
 
 autoload/*
 
-jdt/data
+jdt/data/*
+!jdt/data/.stay
 jdt/config_*/**
 !jdt/config_*/config.ini
 

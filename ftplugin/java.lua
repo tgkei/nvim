@@ -30,7 +30,6 @@ local config = {
          -- Must point to the                                                     Change this to
          -- eclipse.jdt.ls installation                                           the actual version
 
-
     -- 💀
     '-configuration', '/Users/user/.config/nvim/jdt/config_mac',
                     -- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        ^^^^^^
@@ -40,7 +39,7 @@ local config = {
 
     -- 💀
     -- See `data directory configuration` section in the README
-    '-data', workspace_dir
+    '-data', workspace_dir,
   },
 
   -- 💀
@@ -69,7 +68,7 @@ local config = {
 }
 -- This starts a new client & server,
 -- or attaches to an existing client & server depending on the `root_dir`.
-require('jdtls').start_or_attach(config)
+-- require('jdtls').start_or_attach(config)
 
 local nvim_jdtls_status_ok, nvim_jdtls = pcall(require, "jdtls")
 if not nvim_jdtls_status_ok then
