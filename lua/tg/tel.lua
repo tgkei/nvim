@@ -78,6 +78,11 @@ telescope.setup {
         ["?"] = actions.which_key,
       },
     },
+    layout_config = {
+      horizontal = {
+        preview_cutoff = 0,
+      },
+    }
   },
   pickers = {
     -- Default configuration for builtin pickers goes here:
