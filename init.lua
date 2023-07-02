@@ -11,4 +11,3 @@ require "tg.lsp_config"
 
 -- vim.cmd "colorscheme tokyonight"
 vim.cmd "colorscheme gruvbox"
-
