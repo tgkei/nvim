@@ -6,7 +6,7 @@ end
 bufferline.setup {
         options = {
             mode = "buffers", -- set to "tabs" to only show tabpages instead
-            numbers = "ordinal", -- "none" | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,
+            numbers = "none", -- "none" | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,
             close_command = "bdelete! %d",       -- can be a string | function, see "Mouse actions"
             right_mouse_command = "bdelete! %d", -- can be a string | function, see "Mouse actions"
             left_mouse_command = "buffer %d",    -- can be a string | function, see "Mouse actions"
@@ -70,17 +70,16 @@ bufferline.setup {
                 }
             },
             color_icons = true, -- | false, -- whether or not to add the filetype icon highlights
-            get_element_icon = function(element) return icon end,
+            get_element_icon = devicon_bg, 
             show_buffer_icons = true, --true | false, -- disable filetype icons for buffers
             show_buffer_close_icons = false, -- true | false,
-            show_buffer_default_icon = false, --true | false, -- whether or not an unrecognised filetype should show a default icon
             show_close_icon = false, --true | false,
             show_tab_indicators = true, --true | false,
             show_duplicate_prefix = true, --true | false, -- whether to show duplicate buffer prefix
             persist_buffer_sort = true, -- whether or not custom sorted buffers should persist
             -- can also be a table containing 2 custom separators
             -- [focused and unfocused]. eg: { '|', '|' }
-            separator_style = "slant", -- "slant" | "slope" | "thick" | "thin" | { 'any', 'any' },
+            separator_style = "thick", -- "slant" | "slope" | "thick" | "thin" | { 'any', 'any' },
             enforce_regular_tabs = false, -- false | true,
             always_show_bufferline = true, -- true | false,
             hover = {
@@ -94,3 +93,13 @@ bufferline.setup {
             -- end
         }
     }
+
+local function devicon_bg(element)
+  -- element consists of {filetype: string, path: string, extension: string, directory: string}
+  -- This can be used to change how bufferline fetches the icon
+  -- for an element e.g. a buffer or a tab.
+  -- e.g.
+  local icon, hl = require('nvim-web-devicons').get_icon_by_filetype(element.filetype, { default = false })
+  return icon, hl
+end
+

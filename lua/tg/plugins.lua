@@ -49,22 +49,27 @@ return packer.startup(function(use)
   use "ellisonleao/gruvbox.nvim"
   use 'folke/tokyonight.nvim'
 
+  -- nvim-web-devicons
+  use {
+    'kyazdani42/nvim-web-devicons',
+    'nvim-tree/nvim-web-devicons',
+  }
+
   -- lualine
   use {
     'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
   -- bufferline
-  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 
   -- nvimtree
   use {
-    'kyazdani42/nvim-tree.lua',
+    'nvim-tree/nvim-tree.lua',
     requires = {
-      'kyazdani42/nvim-web-devicons', -- optional, for file icons
+      'nvim-tree/nvim-web-devicons', -- optional
     },
-    tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
 
   -- cmp plugins
