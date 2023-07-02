@@ -47,7 +47,7 @@ return packer.startup(function(use)
 
   -- colorscheme
   use "ellisonleao/gruvbox.nvim"
-  use 'folke/tokyonight.nvim'
+  -- use 'folke/tokyonight.nvim'
 
   -- nvim-web-devicons
   use {
