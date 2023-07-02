@@ -1,7 +1,34 @@
 local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ':p:h:t')
 local workspace_dir = '/Users/user/.config/nvim/jdt/data/' .. project_name
 
+local on_attach = function (client, bufnr)
+    -- require'lsp'.common_on_attach(client, bufr)
+    local opts = { noremap = true, silent = true }
+    vim.keymap.set('n', '<leader>rn', function() vim.lsp.buf.rename() end, opts)
+    vim.keymap.set('n', '<leader>ca', function() vim.lsp.buf.code_action() end, opts)
+    vim.keymap.set('n', 'gd', function() vim.lsp.buf.definition() end, opts)
+    vim.keymap.set('n', 'gi', function() vim.lsp.buf.implementation() end, opts)
+    vim.keymap.set('n', 'gr', function() require('telescope.builtin').lsp_references() end, opts)
+    vim.keymap.set('n', 'K', function() vim.lsp.buf.hover() end, opts)
+
+    vim.diagnostic.config({virtual_text = false})
+    
+    vim.api.nvim_buf_set_keymap(bufnr, "n", "[", '<cmd>lua vim.diagnostic.goto_prev({ border = "rounded" })<CR>', opts)
+    vim.api.nvim_buf_set_keymap(bufnr, "n", "]", '<cmd>lua vim.diagnostic.goto_next({ border = "rounded" })<CR>', {})
+
+    vim.api.nvim_buf_set_keymap(
+      bufnr,
+      "n",
+      "gl",
+      '<cmd>lua vim.diagnostic.open_float({ border = "rounded" })<CR>',
+      opts
+    )
+end
+
 local config = {
+  -- TG keymap
+  on_attach = on_attach,
+
   -- The command that starts the language server
   -- See: https://github.com/eclipse/eclipse.jdt.ls#running-from-the-command-line
   cmd = {
@@ -66,37 +93,13 @@ local config = {
     bundles = {}
   },
 }
--- This starts a new client & server,
--- or attaches to an existing client & server depending on the `root_dir`.
--- require('jdtls').start_or_attach(config)
 
 local nvim_jdtls_status_ok, nvim_jdtls = pcall(require, "jdtls")
 if not nvim_jdtls_status_ok then
     return
 end
 
-local opts = { noremap = true, silent = true }
-vim.api.nvim_set_keymap("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
-vim.api.nvim_set_keymap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
-vim.api.nvim_set_keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
-vim.api.nvim_set_keymap("n", "gk", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
-vim.api.nvim_set_keymap("n", "gK", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
-vim.api.nvim_set_keymap("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>cr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>cd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>cD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>cr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>ci", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
-vim.api.nvim_set_keymap("n", "<leader>cx", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
-vim.api.nvim_set_keymap("n", "[d", '<cmd>lua vim.diagnostic.goto_prev({ border = "rounded" })<CR>', opts)
-vim.api.nvim_set_keymap(
-    "n",
-    "gl",
-    '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics({ border = "rounded" })<CR>',
-    opts)
-vim.api.nvim_set_keymap("n", "]d", '<cmd>lua vim.diagnostic.goto_next({ border = "rounded" })<CR>', opts)
---vim.api.nvim_set_keymap("n", "<leader>q", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
-
+-- This starts a new client & server,
+-- or attaches to an existing client & server depending on the `root_dir`.
 nvim_jdtls.start_or_attach(config)
 

@@ -58,7 +58,6 @@ return packer.startup(function(use)
   -- bufferline
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
-
   -- nvimtree
   use {
     'kyazdani42/nvim-tree.lua',
@@ -76,7 +75,6 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
 
-
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
@@ -90,12 +88,6 @@ return packer.startup(function(use)
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
   }
-
-
-  -- scala
-  use({'scalameta/nvim-metals', requires = { "nvim-lua/plenary.nvim" }})
-  -- kotlin
-  use({'udalov/kotlin-vim'})
 
   -- treesitter
   use {
