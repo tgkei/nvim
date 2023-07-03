@@ -16,3 +16,5 @@ jdt/config_*/**
 !jdt/config_*/config.ini
 
 plugin
+
+**/.luarc.json

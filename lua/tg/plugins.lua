@@ -52,7 +52,7 @@ return packer.startup(function(use)
   -- nvim-web-devicons
   use {
     'kyazdani42/nvim-web-devicons',
-    'nvim-tree/nvim-web-devicons',
+    --'nvim-tree/nvim-web-devicons', downloaing both devicons worked, but check if only above still works and if it is, use only above
   }
 
   -- lualine
@@ -108,6 +108,15 @@ return packer.startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use 'nvim-telescope/telescope-media-files.nvim'
+
+  -- markdown preview
+   use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+   })
+
+  --use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

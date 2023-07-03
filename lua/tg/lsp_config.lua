@@ -18,7 +18,7 @@ local on_attach = function (_, bufnr)
     vim.keymap.set('n', 'K', function() vim.lsp.buf.hover() end, opts)
 
     vim.diagnostic.config({virtual_text = false})
-    
+
     vim.api.nvim_buf_set_keymap(bufnr, "n", "[", '<cmd>lua vim.diagnostic.goto_prev({ border = "rounded" })<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, "n", "]", '<cmd>lua vim.diagnostic.goto_next({ border = "rounded" })<CR>', {})
 
@@ -42,3 +42,12 @@ require("lspconfig").pyright.setup {
 require("lspconfig").kotlin_language_server.setup {
     on_attach = on_attach
 }
+
+require("lspconfig").lua_ls.setup {
+    on_attach = on_attach
+}
+
+require("lspconfig").dockerls.setup {
+    on_attach = on_attach
+}
+

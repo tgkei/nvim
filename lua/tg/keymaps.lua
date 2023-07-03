@@ -62,6 +62,7 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- File status --
 keymap("n", "<C-s>", ":w<CR>", opts) -- save
+keymap("n", "<C-q>", ":q<CR>", opts) -- close
 
 -- Terminal --
 -- Better terminal navigation
