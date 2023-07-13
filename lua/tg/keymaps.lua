@@ -21,7 +21,7 @@ vim.g.maplocalleader = " "
 -- Normal --
 -- Create window
 keymap("n", "vs", "<C-w>v", opts)
---keymap("n", "hs", "<C-w>s", opts)
+-- keymap("n", "hs", "<C-w>s", opts)
 
 -- Do not yank with x
 keymap("n", 'x', '"_x', opts)
