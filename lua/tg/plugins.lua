@@ -120,6 +120,9 @@ return packer.startup(function(use)
   -- diagnostic toggler
   use 'WhoIsSethDaniel/toggle-lsp-diagnostics.nvim'
 
+  -- dressing
+  use {'stevearc/dressing.nvim'}
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
