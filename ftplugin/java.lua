@@ -79,6 +79,20 @@ local config = {
   -- for a list of options
   settings = {
     java = {
+      imports = {
+          gradle = {
+            enabled = true,
+            wrapper = {
+              enabled = true,
+              checksums = {
+                {
+                   sha256 = '2b1d33324b1040054feb9e6bd13531efea54827ea5b6844c8c66836c90c74145',
+                   allowed = true
+                 }
+               },
+             }
+          }
+      }
     }
   },
 
@@ -90,7 +104,25 @@ local config = {
   --
   -- If you don't plan on using the debugger or other eclipse.jdt.ls plugins you can remove this
   init_options = {
-    bundles = {}
+    bundles = {},
+    settings = {
+      java = {
+        imports = {
+            gradle = {
+              enabled = true,
+              wrapper = {
+                enabled = true,
+                checksums = {
+                  {
+                     sha256 = '2b1d33324b1040054feb9e6bd13531efea54827ea5b6844c8c66836c90c74145',
+                     allowed = true
+                   }
+                 },
+               }
+            }
+        }
+      }
+    }
   },
 }
 

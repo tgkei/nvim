@@ -51,3 +51,10 @@ require("lspconfig").dockerls.setup {
     on_attach = on_attach
 }
 
+require("lspconfig").gopls.setup {
+    on_attach = on_attach
+}
+
+require("lspconfig").rust_analyzer.setup {
+    on_attach = on_attach
+}
