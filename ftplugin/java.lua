@@ -1,5 +1,5 @@
 local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ':p:h:t')
-local workspace_dir = '/Users/user/.config/nvim/jdt/data/' .. project_name
+local workspace_dir = vim.fn.stdpath('data') .. '/jdt/data/' .. project_name
 
 local on_attach = function (client, bufnr)
     -- require'lsp'.common_on_attach(client, bufr)
@@ -12,7 +12,7 @@ local on_attach = function (client, bufnr)
     vim.keymap.set('n', 'K', function() vim.lsp.buf.hover() end, opts)
 
     vim.diagnostic.config({virtual_text = false})
-    
+
     vim.api.nvim_buf_set_keymap(bufnr, "n", "[", '<cmd>lua vim.diagnostic.goto_prev({ border = "rounded" })<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, "n", "]", '<cmd>lua vim.diagnostic.goto_next({ border = "rounded" })<CR>', {})
 
