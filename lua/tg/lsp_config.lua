@@ -36,7 +36,16 @@ require("lspconfig").luau_lsp.setup {
 }
 
 require("lspconfig").pyright.setup {
-    on_attach = on_attach
+    on_attach = on_attach,
+    settings = {
+        python = {
+            analysis = {
+                diagnosticSeverityOverrides = {
+                    reportGeneralTypeIssues = "none"
+                }
+            }
+        }
+    }
 }
 
 require("lspconfig").kotlin_language_server.setup {
