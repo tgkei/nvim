@@ -1,15 +1,17 @@
-require "tg.options"
-require "tg.keymaps"
-require "tg.plugins"
-require "tg.lualine"
-require "tg.bufferline"
-require "tg.nvimtree"
-require "tg.cmp"
-require "tg.treesitter"
-require "tg.tel"
-require "tg.lsp_config"
-require "tg.diagnostic"
+-- lazy.nvim 설치
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable",
+    lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
 
--- vim.cmd "colorscheme tokyonight"
-vim.cmd "colorscheme gruvbox"
-vim.cmd "colorscheme gruvbox"
+-- 플러그인 설정 로드
+require("lazy").setup("plugins")
+
