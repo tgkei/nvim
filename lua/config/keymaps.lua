@@ -5,10 +5,11 @@ local term_opts = { silent = true }
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
---Remap space as leader key
-keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+
+--Remap space as leader key
+keymap("", "<Space>", "<Nop>", opts)
 
 -- Modes
 --   normal_mode = "n",
@@ -81,3 +82,8 @@ keymap("n", "<leader>t", ":sp<CR> :term<CR> :resize 8<CR> i", opts)
 -- keymap("t", "<Esc>", "<C-\\><C-n>", opts)
 --keymap("n", "<leader>qt", "bw!<CR>", opts)
 keymap("t", "<ESC>", ":<CR> <C-\\><C-n> :<CR> :bw!<CR>", opts)
+
+
+-- nvim tree
+vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
+

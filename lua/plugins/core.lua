@@ -1,3 +1,5 @@
+vim.o.clipboard = "unnamedplus"
+
 return {
   -- core
   "nvim-lua/popup.nvim",

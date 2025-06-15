@@ -1,3 +1,8 @@
+-- Set leader BEFORE any mappings
+require("config.options")
+require("config.keymaps")
+vim.cmd "colorscheme gruvbox"
+
 -- lazy.nvim 설치
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -14,4 +19,3 @@ vim.opt.rtp:prepend(lazypath)
 
 -- 플러그인 설정 로드
 require("lazy").setup("plugins")
-
