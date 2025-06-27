@@ -1,6 +1,7 @@
 return {
     {
       "nvim-telescope/telescope.nvim",
+      version = false, -- 최신 커밋을 쓰도록 설정
       dependencies = { "nvim-lua/plenary.nvim" },
       config = function()
         local telescope = require("telescope")
