@@ -128,6 +128,7 @@ local config = {
 
 local nvim_jdtls_status_ok, nvim_jdtls = pcall(require, "jdtls")
 if not nvim_jdtls_status_ok then
+    vim.notify("Failed to load nvim-jdtls: " .. tostring(nvim_jdtls), vim.log.levels.ERROR)
     return
 end
 

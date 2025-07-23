@@ -8,7 +8,11 @@ return {
     vim.api.nvim_set_keymap("n", "<leader>e", ":NvimTreeToggle<cr>", { noremap = true, silent = true })
 
     local function on_attach(bufnr)
-      local api = require("nvim-tree.api")
+      local api_ok, api = pcall(require, "nvim-tree.api")
+      if not api_ok then
+        vim.notify("Failed to load nvim-tree.api: " .. tostring(api), vim.log.levels.ERROR)
+        return
+      end
 
       local function opts(desc)
         return {
@@ -81,7 +85,13 @@ return {
       vim.keymap.set("n", "h", api.node.open.horizontal, opts("Open: Horizontal Split"))
     end
 
-    require("nvim-tree").setup({
+    local nvim_tree_ok, nvim_tree = pcall(require, "nvim-tree")
+    if not nvim_tree_ok then
+      vim.notify("Failed to load nvim-tree: " .. tostring(nvim_tree), vim.log.levels.ERROR)
+      return
+    end
+    
+    nvim_tree.setup({
       on_attach = on_attach,
       sort_by = "case_sensitive",
       view = {

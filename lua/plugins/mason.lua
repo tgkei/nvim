@@ -15,7 +15,11 @@ return {
       "williamboman/mason.nvim",
     },
     config = function()
-      local lspconfig = require("lspconfig")
+      local lspconfig_ok, lspconfig = pcall(require, "lspconfig")
+      if not lspconfig_ok then
+        vim.notify("Failed to load lspconfig: " .. tostring(lspconfig), vim.log.levels.ERROR)
+        return
+      end
 
       local on_attach = function(client, bufnr)
         vim.notify("LSP attached: " .. client.name)
@@ -31,7 +35,12 @@ return {
         vim.keymap.set("n", "gl", function() vim.diagnostic.open_float({ border = "rounded" }) end, opts)
       end
 
-      require("mason").setup()
+      local mason_ok, mason = pcall(require, "mason")
+      if not mason_ok then
+        vim.notify("Failed to load mason: " .. tostring(mason), vim.log.levels.ERROR)
+        return
+      end
+      mason.setup()
 
       lspconfig.pyright.setup {
         on_attach = on_attach,

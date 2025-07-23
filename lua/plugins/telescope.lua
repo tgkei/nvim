@@ -4,10 +4,22 @@ return {
       version = false, -- 최신 커밋을 쓰도록 설정
       dependencies = { "nvim-lua/plenary.nvim" },
       config = function()
-        local telescope = require("telescope")
-        local actions = require("telescope.actions")
+        local telescope_ok, telescope = pcall(require, "telescope")
+        if not telescope_ok then
+          vim.notify("Failed to load telescope: " .. tostring(telescope), vim.log.levels.ERROR)
+          return
+        end
+        
+        local actions_ok, actions = pcall(require, "telescope.actions")
+        if not actions_ok then
+          vim.notify("Failed to load telescope.actions: " .. tostring(actions), vim.log.levels.ERROR)
+          return
+        end
 
-        telescope.load_extension("media_files")
+        local media_files_ok, _ = pcall(telescope.load_extension, "media_files")
+        if not media_files_ok then
+          vim.notify("Failed to load telescope media_files extension", vim.log.levels.WARN)
+        end
 
         telescope.setup({
           defaults = {
